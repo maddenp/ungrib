@@ -1,7 +1,59 @@
+diff --git a/chem/KPP/clean_kpp b/chem/KPP/clean_kpp
+index 84a3845..e83a93f 100755
+--- a/chem/KPP/clean_kpp
++++ b/chem/KPP/clean_kpp
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
+diff --git a/chem/KPP/compile_wkc b/chem/KPP/compile_wkc
+index 1d0cdc1..312c4f2 100755
+--- a/chem/KPP/compile_wkc
++++ b/chem/KPP/compile_wkc
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
+diff --git a/chem/KPP/kpp/kpp-2.1/kpp_compile b/chem/KPP/kpp/kpp-2.1/kpp_compile
+index 3f89e58..574075e 100755
+--- a/chem/KPP/kpp/kpp-2.1/kpp_compile
++++ b/chem/KPP/kpp/kpp-2.1/kpp_compile
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
+diff --git a/chem/KPP/util/create_inc_files.csh b/chem/KPP/util/create_inc_files.csh
+index 6ce1faf..b922168 100755
+--- a/chem/KPP/util/create_inc_files.csh
++++ b/chem/KPP/util/create_inc_files.csh
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
+diff --git a/chem/KPP/util/wkc/linker.csh b/chem/KPP/util/wkc/linker.csh
+index 35ee6bc..0fa8847 100755
+--- a/chem/KPP/util/wkc/linker.csh
++++ b/chem/KPP/util/wkc/linker.csh
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
+diff --git a/chem/KPP/util/write_decomp/write_decom.csh b/chem/KPP/util/write_decomp/write_decom.csh
+index 5b63061..112f5bc 100755
+--- a/chem/KPP/util/write_decomp/write_decom.csh
++++ b/chem/KPP/util/write_decomp/write_decom.csh
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
+diff --git a/clean b/clean
+index 6ce8142..2e9e3a5 100755
+--- a/clean
++++ b/clean
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
 diff --git a/compile b/compile
-index 0595d05..623b106 100755
+index 0595d05..ca3c71a 100755
 --- a/compile
 +++ b/compile
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
 @@ -411,12 +410,0 @@ else
 -  if      ( "$comp[1]" == "gfortran" ) then
 -    gfortran --version
@@ -15,3 +67,343 @@ index 0595d05..623b106 100755
 -  echo " "
 -  echo "============================================================================================== "
 -  echo " "
+diff --git a/external/esmf_time_f90/testall.csh b/external/esmf_time_f90/testall.csh
+index 9f80827..e937382 100755
+--- a/external/esmf_time_f90/testall.csh
++++ b/external/esmf_time_f90/testall.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/external/fftpack/77to90.csh b/external/fftpack/77to90.csh
+index d88ba8c..3e54c0f 100755
+--- a/external/fftpack/77to90.csh
++++ b/external/fftpack/77to90.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/external/io_grib1/diffwrf b/external/io_grib1/diffwrf
+index 946e198..374b01c 100755
+--- a/external/io_grib1/diffwrf
++++ b/external/io_grib1/diffwrf
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/DOMAIN_TIME_TEST/DOMAIN_TIME_TEST.csh b/tools/DOMAIN_TIME_TEST/DOMAIN_TIME_TEST.csh
+index 0ec862d..5da21d4 100755
+--- a/tools/DOMAIN_TIME_TEST/DOMAIN_TIME_TEST.csh
++++ b/tools/DOMAIN_TIME_TEST/DOMAIN_TIME_TEST.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/all_reg.csh b/tools/all_reg.csh
+index 9b0b805..d5b3369 100755
+--- a/tools/all_reg.csh
++++ b/tools/all_reg.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/any_updates_in_registry.csh b/tools/any_updates_in_registry.csh
+index 9dc5da3..2529a57 100755
+--- a/tools/any_updates_in_registry.csh
++++ b/tools/any_updates_in_registry.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/build_codebase b/tools/build_codebase
+index 4dd1617..7a082e6 100755
+--- a/tools/build_codebase
++++ b/tools/build_codebase
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/build_test.csh b/tools/build_test.csh
+index 04a279e..1f579a8 100755
+--- a/tools/build_test.csh
++++ b/tools/build_test.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/danger b/tools/danger
+index a9de33f..b380432 100755
+--- a/tools/danger
++++ b/tools/danger
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/link_codebase_to_wrfbrowser b/tools/link_codebase_to_wrfbrowser
+index ff1b007..3a0db5e 100755
+--- a/tools/link_codebase_to_wrfbrowser
++++ b/tools/link_codebase_to_wrfbrowser
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/regtest.csh b/tools/regtest.csh
+index 4234d7c..bd3a934 100644
+--- a/tools/regtest.csh
++++ b/tools/regtest.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/regtest_esmf.csh b/tools/regtest_esmf.csh
+index 4a62244..87940e5 100755
+--- a/tools/regtest_esmf.csh
++++ b/tools/regtest_esmf.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -25 +25 @@ if ( "$hst" == "ma" ) then   # manta
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/regtest_hwrf.csh b/tools/regtest_hwrf.csh
+index a7880cd..7bfd243 100644
+--- a/tools/regtest_hwrf.csh
++++ b/tools/regtest_hwrf.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/regtest_nmmnest.csh b/tools/regtest_nmmnest.csh
+index 7a0178c..e186605 100644
+--- a/tools/regtest_nmmnest.csh
++++ b/tools/regtest_nmmnest.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/safe b/tools/safe
+index 50247d5..beb476d 100755
+--- a/tools/safe
++++ b/tools/safe
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/test4_0_ESMFSST.lsf.csh b/tools/test4_0_ESMFSST.lsf.csh
+index 68c75b6..00b9531 100644
+--- a/tools/test4_0_ESMFSST.lsf.csh
++++ b/tools/test4_0_ESMFSST.lsf.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/test_compile.csh b/tools/test_compile.csh
+index e4a4f28..e47b9ff 100755
+--- a/tools/test_compile.csh
++++ b/tools/test_compile.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/test_nml_domains.csh b/tools/test_nml_domains.csh
+index 112c264..eb81df7 100755
+--- a/tools/test_nml_domains.csh
++++ b/tools/test_nml_domains.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/tools/testomatic b/tools/testomatic
+index 272ddc5..65c13dc 100755
+--- a/tools/testomatic
++++ b/tools/testomatic
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/da/makedepf90-2.8.8/setup_makedepf90 b/var/da/makedepf90-2.8.8/setup_makedepf90
+index c8a0053..6682883 100755
+--- a/var/da/makedepf90-2.8.8/setup_makedepf90
++++ b/var/da/makedepf90-2.8.8/setup_makedepf90
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/ftn.setup.csh b/var/external/crtm_2.3.0/config-setup/ftn.setup.csh
+index b516544..3e327ff 100644
+--- a/var/external/crtm_2.3.0/config-setup/ftn.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/ftn.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/g95-debug.setup.csh b/var/external/crtm_2.3.0/config-setup/g95-debug.setup.csh
+index a6ce1eb..519f7fd 100644
+--- a/var/external/crtm_2.3.0/config-setup/g95-debug.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/g95-debug.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/g95.setup.csh b/var/external/crtm_2.3.0/config-setup/g95.setup.csh
+index f7ce791..97cdd94 100644
+--- a/var/external/crtm_2.3.0/config-setup/g95.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/g95.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/gfortran-debug.setup.csh b/var/external/crtm_2.3.0/config-setup/gfortran-debug.setup.csh
+index b34c005..a4889c8 100644
+--- a/var/external/crtm_2.3.0/config-setup/gfortran-debug.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/gfortran-debug.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/gfortran.setup.csh b/var/external/crtm_2.3.0/config-setup/gfortran.setup.csh
+index 0aa6314..aba1345 100644
+--- a/var/external/crtm_2.3.0/config-setup/gfortran.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/gfortran.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/ifort-debug.setup.csh b/var/external/crtm_2.3.0/config-setup/ifort-debug.setup.csh
+index 82c5fb8..27a3244 100644
+--- a/var/external/crtm_2.3.0/config-setup/ifort-debug.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/ifort-debug.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/ifort.setup.csh b/var/external/crtm_2.3.0/config-setup/ifort.setup.csh
+index 18ec964..b4e6353 100644
+--- a/var/external/crtm_2.3.0/config-setup/ifort.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/ifort.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/pgf95-debug.setup.csh b/var/external/crtm_2.3.0/config-setup/pgf95-debug.setup.csh
+index 8401d37..17b30dc 100644
+--- a/var/external/crtm_2.3.0/config-setup/pgf95-debug.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/pgf95-debug.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/pgf95.setup.csh b/var/external/crtm_2.3.0/config-setup/pgf95.setup.csh
+index ead785e..1a0405f 100644
+--- a/var/external/crtm_2.3.0/config-setup/pgf95.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/pgf95.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/xlf2003-debug.setup.csh b/var/external/crtm_2.3.0/config-setup/xlf2003-debug.setup.csh
+index 9cac6cb..e2e2ef6 100644
+--- a/var/external/crtm_2.3.0/config-setup/xlf2003-debug.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/xlf2003-debug.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/external/crtm_2.3.0/config-setup/xlf2003.setup.csh b/var/external/crtm_2.3.0/config-setup/xlf2003.setup.csh
+index 9c0f255..4f713f6 100644
+--- a/var/external/crtm_2.3.0/config-setup/xlf2003.setup.csh
++++ b/var/external/crtm_2.3.0/config-setup/xlf2003.setup.csh
+@@ -1 +1 @@
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/mri4dvar/run_mri3d4dvar.csh_lsf b/var/mri4dvar/run_mri3d4dvar.csh_lsf
+index b2efdd2..72ded75 100755
+--- a/var/mri4dvar/run_mri3d4dvar.csh_lsf
++++ b/var/mri4dvar/run_mri3d4dvar.csh_lsf
+@@ -1 +1 @@
+-#!/bin/tcsh -f
++#!/usr/bin/env tcsh
+@@ -280 +280 @@ cat > submit_lsf.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -433 +433 @@ cat > submit_lsf.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -532 +532 @@ cat > submit_lsf.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -710 +710 @@ cat > submit_lsf.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/mri4dvar/run_mri3d4dvar.csh_pbs b/var/mri4dvar/run_mri3d4dvar.csh_pbs
+index 98a7331..56f53b9 100755
+--- a/var/mri4dvar/run_mri3d4dvar.csh_pbs
++++ b/var/mri4dvar/run_mri3d4dvar.csh_pbs
+@@ -1 +1 @@
+-#!/bin/tcsh -f
++#!/usr/bin/env tcsh
+@@ -283 +283 @@ cat > submit_lsf.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -304 +304 @@ cat > submit_pbs.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -467 +467 @@ cat > submit_lsf.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -488 +488 @@ cat > submit_pbs.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -597 +597 @@ cat > submit_lsf.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -618 +618 @@ cat > submit_pbs.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -810 +810 @@ cat > submit_lsf.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+@@ -831 +831 @@ cat > submit_pbs.csh <<EOF
+-#!/bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/mri4dvar/wraper_mri3d4dvar.csh b/var/mri4dvar/wraper_mri3d4dvar.csh
+index 3da5da1..d4dae96 100755
+--- a/var/mri4dvar/wraper_mri3d4dvar.csh
++++ b/var/mri4dvar/wraper_mri3d4dvar.csh
+@@ -1 +1 @@
+-#!/bin/tcsh -f
++#!/usr/bin/env tcsh
+diff --git a/var/obsproc/MAP_plot/Map.CAA.csh b/var/obsproc/MAP_plot/Map.CAA.csh
+index d27eee1..5e6db80 100755
+--- a/var/obsproc/MAP_plot/Map.CAA.csh
++++ b/var/obsproc/MAP_plot/Map.CAA.csh
+@@ -1 +1 @@
+-#! /bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/obsproc/MAP_plot/Map.CAA_SSMI.csh b/var/obsproc/MAP_plot/Map.CAA_SSMI.csh
+index 7a322d0..31210b0 100755
+--- a/var/obsproc/MAP_plot/Map.CAA_SSMI.csh
++++ b/var/obsproc/MAP_plot/Map.CAA_SSMI.csh
+@@ -1 +1 @@
+-#! /bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/obsproc/MAP_plot/Map.KMA.csh b/var/obsproc/MAP_plot/Map.KMA.csh
+index 7adb023..1c36543 100755
+--- a/var/obsproc/MAP_plot/Map.KMA.csh
++++ b/var/obsproc/MAP_plot/Map.KMA.csh
+@@ -1 +1 @@
+-#! /bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/obsproc/MAP_plot/Map.RT.csh b/var/obsproc/MAP_plot/Map.RT.csh
+index f8ea4c8..376daeb 100755
+--- a/var/obsproc/MAP_plot/Map.RT.csh
++++ b/var/obsproc/MAP_plot/Map.RT.csh
+@@ -1 +1 @@
+-#! /bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/obsproc/MAP_plot/Map.USA.csh b/var/obsproc/MAP_plot/Map.USA.csh
+index b346707..def5023 100755
+--- a/var/obsproc/MAP_plot/Map.USA.csh
++++ b/var/obsproc/MAP_plot/Map.USA.csh
+@@ -1 +1 @@
+-#! /bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/obsproc/MAP_plot/Map.USA_SSMI.csh b/var/obsproc/MAP_plot/Map.USA_SSMI.csh
+index 3211812..8e1ec43 100755
+--- a/var/obsproc/MAP_plot/Map.USA_SSMI.csh
++++ b/var/obsproc/MAP_plot/Map.USA_SSMI.csh
+@@ -1 +1 @@
+-#! /bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/obsproc/MAP_plot/Map.csh b/var/obsproc/MAP_plot/Map.csh
+index 62c1da0..424d407 100755
+--- a/var/obsproc/MAP_plot/Map.csh
++++ b/var/obsproc/MAP_plot/Map.csh
+@@ -1 +1 @@
+-#! /bin/csh
++#!/usr/bin/env tcsh
+diff --git a/var/scripts/gen_be/gen_be_ensrf.csh b/var/scripts/gen_be/gen_be_ensrf.csh
+index 58c7c47..218f50c 100755
+--- a/var/scripts/gen_be/gen_be_ensrf.csh
++++ b/var/scripts/gen_be/gen_be_ensrf.csh
+@@ -1 +1 @@
+-#! /bin/csh -f
++#!/usr/bin/env tcsh
+diff --git a/var/scripts/gen_be/gen_be_ep1.csh b/var/scripts/gen_be/gen_be_ep1.csh
+index fa725da..1171039 100755
+--- a/var/scripts/gen_be/gen_be_ep1.csh
++++ b/var/scripts/gen_be/gen_be_ep1.csh
+@@ -1 +1 @@
+-#! /bin/csh -f
++#!/usr/bin/env tcsh

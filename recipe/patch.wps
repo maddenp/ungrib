@@ -1,3 +1,38 @@
+diff --git a/arch/fixlinks b/arch/fixlinks
+index 3c54a24..018878c 100755
+--- a/arch/fixlinks
++++ b/arch/fixlinks
+@@ -1 +1 @@
+-#!/bin/csh -f 
++#!/usr/bin/env tcsh
+diff --git a/arch/zaplinks b/arch/zaplinks
+index 51bf5ed..d8134c8 100755
+--- a/arch/zaplinks
++++ b/arch/zaplinks
+@@ -1 +1 @@
+-#!/bin/csh -f 
++#!/usr/bin/env tcsh
+diff --git a/clean b/clean
+index 862376f..4620dc8 100755
+--- a/clean
++++ b/clean
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
+diff --git a/compile b/compile
+index c405613..76ea7ad 100755
+--- a/compile
++++ b/compile
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
+diff --git a/link_grib.csh b/link_grib.csh
+index e087015..24056d1 100755
+--- a/link_grib.csh
++++ b/link_grib.csh
+@@ -1 +1 @@
+-#!/bin/csh -f
++#!/usr/bin/env tcsh
 diff --git a/ungrib/src/Makefile b/ungrib/src/Makefile
 index 7941723..1331e19 100644
 --- a/ungrib/src/Makefile

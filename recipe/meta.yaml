@@ -37,4 +37,5 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('fortran') }}
 about:
+  home: https://github.com/maddenp/ungrib
   license: OTHER
