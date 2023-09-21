@@ -1,0 +1,11 @@
+&share
+  end_date='2023-09-12_00:00:00'
+  interval_seconds=1
+  max_dom=1
+  start_date='2023-09-12_00:00:00'
+  wrf_core='ARW'
+/
+&ungrib
+  out_format='WPS'
+  prefix='FILE'
+/

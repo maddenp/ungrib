@@ -1,0 +1,39 @@
+package:
+  name: ungrib
+  version: 4.5
+source:
+  - folder: jasper
+    md5: 3734550c77fa3335504b849a7caca79b
+    url: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/jasper-1.900.1.tar.gz
+  - folder: libpng
+    md5: b85505ac9892e82720d10ec08406f72a
+    url: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/libpng-1.2.50.tar.gz
+  - folder: netcdf-c
+    md5: cc7341cc9846a01212bfc8915f7a9726
+    url: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/netcdf-c-4.7.2.tar.gz
+  - folder: netcdf-f
+    md5: 759402703585d12f84667716887c42df
+    url: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/netcdf-fortran-4.5.2.tar.gz
+  - folder: WPS
+    md5: 072c1701a94af3f68edf4397895cd72d
+    url: https://github.com/wrf-model/WPS/archive/refs/tags/v4.5.tar.gz
+    patches:
+      - patch.wps
+  - folder: WRF
+    md5: 7eb7acddbc0ea188d033046e3c754449
+    url: https://github.com/wrf-model/WRF/releases/download/v4.5.1/v4.5.1.tar.gz
+    patches:
+      - patch.wrf
+  - folder: zlib
+    md5: 1c9f62f0778697a09d36121ead88e08e
+    url: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/zlib-1.2.11.tar.gz
+build:
+  include_recipe: false
+  number: 0
+requirements:
+  build:
+    - rsync
+    - {{ compiler('c') }}
+    - {{ compiler('fortran') }}
+about:
+  license: OTHER

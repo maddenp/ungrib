@@ -1,0 +1,17 @@
+diff --git a/compile b/compile
+index 0595d05..623b106 100755
+--- a/compile
++++ b/compile
+@@ -411,12 +410,0 @@ else
+-  if      ( "$comp[1]" == "gfortran" ) then
+-    gfortran --version
+-  else if ( "$comp[1]" == "pgf90" ) then
+-    pgf90 --version
+-  else if ( "$comp[1]" == "ifort" ) then
+-    ifort -V
+-  else
+-    echo "Not sure how to figure out the version of this compiler: $comp[1]"
+-  endif
+-  echo " "
+-  echo "============================================================================================== "
+-  echo " "

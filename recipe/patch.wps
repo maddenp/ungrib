@@ -1,0 +1,17 @@
+diff --git a/ungrib/src/Makefile b/ungrib/src/Makefile
+index 7941723..1331e19 100644
+--- a/ungrib/src/Makefile
++++ b/ungrib/src/Makefile
+@@ -57 +57 @@ g2print.o:		table.o gridinfo.o filelist.o module_datarray.o \
+-			$(CPP) $(CPPFLAGS) $*.F > $*.f90
++			$(CPP) $(CPPFLAGS) -P -traditional $*.F > $*.f90
+@@ -63 +63 @@ rd_grib2.o:		ngl/g2/gribmod.o module_debug.o table.o gridinfo.o ngl/g2/params.o
+-			$(CPP) $(CPPFLAGS) $*.F > $*.f90
++			$(CPP) $(CPPFLAGS) -P -traditional $*.F > $*.f90
+diff --git a/ungrib/src/ngl/g2/Makefile b/ungrib/src/ngl/g2/Makefile
+index 36ae138..73b2c3c 100755
+--- a/ungrib/src/ngl/g2/Makefile
++++ b/ungrib/src/ngl/g2/Makefile
+@@ -17 +17 @@ include $(DEV_TOP)/configure.wps
+-CFLAGS2	=	$(CPPFLAGS) $(COMPRESSION_INC) $(FDEFS) -D__64BIT__
++CFLAGS2	=	$(CPPFLAGS) $(COMPRESSION_INC) -D__64BIT__
