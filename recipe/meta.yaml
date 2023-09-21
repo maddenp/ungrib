@@ -33,6 +33,7 @@ build:
 requirements:
   build:
     - rsync
+    - tcsh
     - {{ compiler('c') }}
     - {{ compiler('fortran') }}
 about:
