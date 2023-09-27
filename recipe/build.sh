@@ -43,10 +43,12 @@ export PATH=$DIR/bin:$PATH
 
 (
   set -eux
-  cd jasper/jasper-1.900.1
-  ./configure --prefix=$DIR
-  make -j
-  make install
+  cd jasper
+  mkdir -pv build_dir
+  cmake -H$PWD -Bbuild_dir -DCMAKE_INSTALL_PREFIX=$DIR
+  cmake --build build_dir
+  (cd build_dir && ctest --output-on-failure)
+  cmake --build build_dir --target install
 ) 2>&1 | tee out.jasper
 
 (
