@@ -3,11 +3,11 @@ package:
   version: 4.5
 source:
   - folder: jasper
-    md5: 3734550c77fa3335504b849a7caca79b
-    url: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/jasper-1.900.1.tar.gz
+    md5: ecd1a20542eab3ced6b0b8c4beddec75
+    url: https://github.com/jasper-software/jasper/releases/download/version-4.0.0/jasper-4.0.0.tar.gz
   - folder: libpng
-    md5: b85505ac9892e82720d10ec08406f72a
-    url: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/libpng-1.2.50.tar.gz
+    md5: 50e93f8e4078e6f168441c994606e306
+    url: https://github.com/glennrp/libpng/archive/refs/tags/v1.6.40.tar.gz
   - folder: netcdf-c
     md5: cc7341cc9846a01212bfc8915f7a9726
     url: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/netcdf-c-4.7.2.tar.gz
@@ -29,9 +29,10 @@ source:
     url: https://www2.mmm.ucar.edu/wrf/OnLineTutorial/compile_tutorial/tar_files/zlib-1.2.11.tar.gz
 build:
   include_recipe: false
-  number: 0
+  number: 1 # <-- reset to 0 when version number updates
 requirements:
   build:
+    - cmake
     - rsync
     - tcsh
     - {{ compiler('c') }}
